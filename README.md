@@ -14,9 +14,9 @@ This script utilizes geogrid and autoRIFT algorithms to generate georeferenced v
 **2) calculate_vmap_SSE.ipynb**
 This script utilizes a mask of stable surfaces (where velocities should be 0) within the area of interest and calculates the Root Mean Squared Error (RMSE) in vx, vy, and speed as a measure of velocity map accuracy.
 
-**4) evaluate_custom_autoRIFT_vmaps.ipynb**
+**3) evaluate_custom_autoRIFT_vmaps.ipynb**
 Extracts velocity time series along glacier centerlines or at specific points on the glacier using input centerline/point shapefiles. 
 
 
-**5) centerline_elevation_processing.ipynb**
+**4) centerline_elevation_processing.ipynb**
 Extracts elevation time series along glacier centerlines and visualize elevation change, surface slope, etc.
