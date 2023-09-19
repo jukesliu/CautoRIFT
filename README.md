@@ -17,4 +17,4 @@ This script utilizes a mask of stable surfaces (where velocities should be 0) wi
 Extracts velocity time series along glacier centerlines or at specific points on the glacier using input centerline/point shapefiles. 
 
 **4) centerline_elevation_processing.ipynb**
-Extracts elevation time series along glacier centerlines from Digital Elevaiton Models (DEMs) stored in .tif files and visualizes elevation change, surface slope, etc.
+Extracts elevation time series along glacier centerlines from Digital Elevation Models (DEMs) stored in .tif files and visualizes elevation change, surface slope, etc. For the extraction of elevation profiles, the glacier centerline shapefile should consist of evenly-spaced circles along the centerline. Elevations are averaged within each circle.
