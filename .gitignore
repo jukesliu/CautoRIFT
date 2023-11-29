@@ -1,0 +1,5 @@
+*.tif
+__pycache__
+.DStore
+*.TIF
+.ipynb_checkpoints
