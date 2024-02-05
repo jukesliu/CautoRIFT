@@ -1,5 +1,5 @@
 # SK-surge-mapping
-[Jukes Liu](https://github.com/jukesliu), Department of Geosciences, Boise State University
+[Jukes Liu](https://github.com/jukesliu). Department of Geosciences and Cryosphere Remote Sensing and Geophysics (CryoGARS) Lab, Boise State University.
 ### Contact: jukesliu@boisestate.edu
 
 ### Summary
