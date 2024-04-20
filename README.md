@@ -84,7 +84,7 @@ Run the scripts in the following order:
 
 (1) `LS7-9_download_AWS.ipynb` and `S2_COG_download_AWS.ipynb`
 
-At this point you should have separate folders with the Landsat images and/or the Sentinel-2 images and/or PlanetScope images from [planet_tile2img](https://github.com/CryoGARS-Glaciology/planet_tile2img) that are all cropped to the same extent. You should also have a separate folder of desired custom inputs to autoRIFT (reference x-velocities, reference y-velocities, stable surface mask, reference DEMs) all in geotiff format. You will need to provide the paths to these folders in the `CautoRIFT.ipynb` script.
+At this point you should have separate folders with the Landsat images and/or the Sentinel-2 images and/or PlanetScope images from [planet_tile2img](https://github.com/CryoGARS-Glaciology/planet_tile2img) that are all cropped to the same extent. The cloudy images must be deleted. You should also have a separate folder of desired custom inputs to autoRIFT (reference x-velocities, reference y-velocities, stable surface mask, reference DEMs) all in geotiff format. You will need to provide the paths to these folders in the `CautoRIFT.ipynb` script.
 
 (2) `CautoRIFT.ipynb`
 
