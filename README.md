@@ -2,6 +2,10 @@
 [Jukes Liu](https://github.com/jukesliu). Department of Geosciences and Cryosphere Remote Sensing and Geophysics (CryoGARS) Lab, Boise State University.
 #### Contact: jukesliu@boisestate.edu, jukes.liu@gmail.com
 
+<img src="https://github.com/julialiu18/SK-surge-mapping/assets/48999537/8a1748c1-573f-4a30-9618-e7e95c424004" width="600">
+
+200-meter resolution velocity map of Sít' Kusá (Turner Glacier), southeast Alaska, during its 2020 surge produced from a Sentinel-2 image pair from May 5 and May 10 2020. Vectors indicate flow direction.
+
 ### Summary
 This repository contains code to map glacier surface velocities using the NASA JPL open-source [geogrid and autoRIFT](https://github.com/nasa-jpl/autoRIFT) software using custom feature-tracking parameters. These custom parameters include a reference velocity map, a reference DEM, search distances, chip sizes, date separations, and a stable surface mask (binary mask over all non-moving surfaces). The custom autoRIFT script (`CautoRIFT.ipynb`) may be applied to optical satellite image pairs from PlanetScope, Sentinel-2, and Landsat 7-9. __NOTE: All input images must be cropped to the same extent using an Area of Interest (AOI) shapefile!__ You can manually compile your input satellite images prior to CautoRIFT or the `LS7-9_download_AWS.ipynb` and `S2_COG_download_AWS.ipynb` scripts provided may be used to automatically download and crop the Landsat and Sentinel-2 images, respectively. A separate GitHub repository ([planet_tile2img](https://github.com/CryoGARS-Glaciology/planet_tile2img)) can be used to download and crop the commercial PlanetScope images.
 
@@ -11,12 +15,6 @@ The `generate_stable_surface_mask.ipynb` script can be used to automatically gen
 ```
 Liu, J., Enderlin, E., Bartholomaus, T., Terleth, Y., Mikesell, T., & Beaud, F. (2024). Propagating speedups during quiescence escalate to the 2020–2021 surge of Sít’ Kusá, southeast Alaska. Journal of Glaciology, 1-12. https://doi.org/10.1017/jog.2023.99
 ```
-
-<img src="https://github.com/julialiu18/SK-surge-mapping/assets/48999537/8a1748c1-573f-4a30-9618-e7e95c424004" width="700">
-
-200-meter resolution velocity map of Sít' Kusá (Turner Glacier), southeast Alaska, during its 2020 surge produced from a Sentinel-2 image pair from May 5 and May 10 2020. Vectors indicate flow direction and colors indicate surfacespeed.
-
-
 
 ## Installing the environments with micromamba
 
