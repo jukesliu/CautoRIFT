@@ -18,14 +18,24 @@ Liu, J., Enderlin, E., Bartholomaus, T., Terleth, Y., Mikesell, T., & Beaud, F. 
 
 ## Installing the environments with micromamba
 
-Two separate python environments must be installed, one for running the CautoRIFT code and one for all other scripts. You must be particularly careful not to install new packages into the CautoRIFT environment, otherwise you may encounter compatibility issues.
+Two separate python environments must be installed, one for running the CautoRIFT code and one for all other scripts, which we call __preautorift__. You must be particularly careful not to install new packages into the __cautorift__ environment, otherwise you may encounter compatibility issues.
 
 (0)	Install micromamba
 ```
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 ```
 
-### Installing the CautoRIFT environment
+### Option A: Using the environment files
+
+```
+micromamba env create --file cautorift.yaml
+
+micromamba env create --file preautorift.yaml
+```
+
+### Option B: Create the environments manually
+
+#### cautorift
 
 (1) Create a new environment named "cautorift" with python 3.8.16
 ```
@@ -38,11 +48,11 @@ micromamba activate cautorift
 
 micromamba install autorift=1.1.0=py38hd9c93a9_0 -c conda-forge
 
-micromamba install notebook matplotlib pandas -c conda-forge
+micromamba install notebook=7.1.3=pyhd8ed1ab_0 matplotlib=3.7.3=py38h50d1736_0 pandas=2.0.3=py38h78e6021_1 -c conda-forge
 
-micromamba install opencv=4.5.0 -c conda-forge
+micromamba install opencv=4.5.0=py38_6 -c conda-forge
 
-micromamba install rasterio=1.2.10
+micromamba install rasterio=1.2.10=py38h42baa9d_0
 ```
 (3) Find the correct __autoRIFT.py__ script (within `micromamba/envs/cautorift/`) using the search bar in Finder and find & replace all the instances of __np.bool__ to __bool__ and __np.int__ to __int__. See my __autoRIFT.py__ path below for reference:
 
@@ -56,7 +66,7 @@ micromamba install rasterio=1.2.10
 micromamba deactivate
 ```
 
-### Installing the preautorift environment
+### preautorift
 
 This environment is to be used for running all other scripts in this repository.
 
@@ -69,11 +79,11 @@ micromamba create -n preautorift python=3.9.6
 ```
 micromamba activate preautorift
 
-micromamba install notebook -c conda-forge
+micromamba install notebook=7.1.3=pyhd8ed1ab_0 -c conda-forge
 
 micromamba install geopandas=0.10.2=pyhd8ed1ab_1 geopandas-base=0.10.2=pyha770c72_1 gdal=3.3.1=py39h0530131_1 rasterio=1.2.8=py39h906574e_0 -c conda-forge
 
-micromamba install boto3 -c conda-forge
+micromamba install boto3=1.34.87=pyhd8ed1ab_0 -c conda-forge
 ```
 
 ## Order of operations
