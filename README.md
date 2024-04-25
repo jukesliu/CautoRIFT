@@ -46,13 +46,8 @@ micromamba create -n cautorift python=3.8.16
 ```
 micromamba activate cautorift
 
-micromamba install autorift=1.1.0=py38hd9c93a9_0 -c conda-forge
+micromamba install autorift=1.1.0 opencv=4.5.0 rasterio=1.2.10 notebook matplotlib pandas -c conda-forge
 
-micromamba install notebook=7.1.3=pyhd8ed1ab_0 matplotlib=3.7.3=py38h50d1736_0 pandas=2.0.3=py38h78e6021_1 -c conda-forge
-
-micromamba install opencv=4.5.0=py38_6 -c conda-forge
-
-micromamba install rasterio=1.2.10=py38h42baa9d_0
 ```
 (3) Find the correct __autoRIFT.py__ script (within `micromamba/envs/cautorift/`) using the search bar in Finder and find & replace all the instances of __np.bool__ to __bool__ and __np.int__ to __int__. See my __autoRIFT.py__ path below for reference:
 
@@ -79,11 +74,8 @@ micromamba create -n preautorift python=3.9.6
 ```
 micromamba activate preautorift
 
-micromamba install notebook=7.1.3=pyhd8ed1ab_0 -c conda-forge
+micromamba install notebook geopandas=0.10.2 gdal=3.3.1 rasterio=1.2.8 boto3=1.34.87 -c conda-forge
 
-micromamba install geopandas=0.10.2=pyhd8ed1ab_1 geopandas-base=0.10.2=pyha770c72_1 gdal=3.3.1=py39h0530131_1 rasterio=1.2.8=py39h906574e_0 -c conda-forge
-
-micromamba install boto3=1.34.87=pyhd8ed1ab_0 -c conda-forge
 ```
 
 ## Order of operations
