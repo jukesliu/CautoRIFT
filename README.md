@@ -16,6 +16,21 @@ The `generate_stable_surface_mask.ipynb` script can be used to automatically gen
 Liu, J., Enderlin, E., Bartholomaus, T., Terleth, Y., Mikesell, T., & Beaud, F. (2024). Propagating speedups during quiescence escalate to the 2020–2021 surge of Sít’ Kusá, southeast Alaska. Journal of Glaciology, 1-12. https://doi.org/10.1017/jog.2023.99
 ```
 
+## Running the code using containers
+### Boise State University Borah Users:
+
+CautoRIFT is on a container on Borah. Move your input files onto Borah and activate the container to run the notebooks using
+
+```
+module load apptainer/1.2.5
+apptainer run /cm/shared/containers/micromamba-jukes.sif jupyter notebook
+```
+
+### Docker users:
+```
+docker pull ghcr.io/bsurc/jukes-micromamba:latest
+```
+
 ## Installing the environments with micromamba
 
 Two separate python environments must be installed, one for running the CautoRIFT code and one for all other scripts, which we call __preautorift__. You must be particularly careful not to install new packages into the __cautorift__ environment, otherwise you may encounter compatibility issues.
