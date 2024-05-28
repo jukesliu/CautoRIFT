@@ -107,8 +107,6 @@ At this point you should have separate folders with the Landsat images and/or th
 
 (3) `calculate_vmap_SSE.ipynb`
 
-## COMING SOON: VIDEO DESCRIBING HOW TO SET UP YOUR INPUTS AND RUN THE EACH SCRIPT IN THE REPOSITORY.
-
 ## Funding and Acknowledgements
 
 This research is funded by NASA FINESST Award 80NSSC21K1640 and NSF Award ANS1954006.
