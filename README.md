@@ -13,7 +13,7 @@ The `generate_stable_surface_mask.ipynb` script can be used to automatically gen
 
 #### Citation
 ```
-Liu, J., Gendreau, M., Enderlin, E. M., & Aberle, R. (2024). Improved records of glacier flow instabilities using customized NASA autoRIFT (CautoRIFT) applied to PlanetScope imagery. The Cryosphere, 18(8), 3571–3590. ([https://doi.org/10.5194/tc-18-3571-2024](https://doi.org/10.5194/tc-18-3571-2024))
+Liu, J., Gendreau, M., Enderlin, E. M., & Aberle, R. (2024). Improved records of glacier flow instabilities using customized NASA autoRIFT (CautoRIFT) applied to PlanetScope imagery. The Cryosphere, 18(8), 3571–3590. https://doi.org/10.5194/tc-18-3571-2024
 ```
 
 ## Running the code using containers
