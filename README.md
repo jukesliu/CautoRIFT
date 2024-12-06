@@ -2,7 +2,7 @@
 [Jukes Liu](https://github.com/jukesliu). Department of Geosciences and Cryosphere Remote Sensing and Geophysics (CryoGARS) Lab, Boise State University.
 #### Contact: jukesliu@boisestate.edu, jukes.liu@gmail.com
 
-<img src="https://github.com/julialiu18/SK-surge-mapping/assets/48999537/8a1748c1-573f-4a30-9618-e7e95c424004" width="600">
+<img src="https://github.com/julialiu18/SK-surge-mapping/assets/48999537/8a1748c1-573f-4a30-9618-e7e95c424004" width="500">
 
 200-meter resolution velocity map of Sít' Kusá (Turner Glacier), southeast Alaska, during its 2020 surge produced from a Sentinel-2 image pair from May 5 and May 10 2020. Vectors indicate flow direction.
 
@@ -13,7 +13,7 @@ The `generate_stable_surface_mask.ipynb` script can be used to automatically gen
 
 #### Citation
 ```
-Liu, J., Enderlin, E., Bartholomaus, T., Terleth, Y., Mikesell, T., & Beaud, F. (2024). Propagating speedups during quiescence escalate to the 2020–2021 surge of Sít’ Kusá, southeast Alaska. Journal of Glaciology, 1-12. https://doi.org/10.1017/jog.2023.99
+Liu, J., Gendreau, M., Enderlin, E. M., & Aberle, R. (2024). Improved records of glacier flow instabilities using customized NASA autoRIFT (CautoRIFT) applied to PlanetScope imagery. The Cryosphere, 18(8), 3571–3590. ([https://doi.org/10.5194/tc-18-3571-2024](https://doi.org/10.5194/tc-18-3571-2024))
 ```
 
 ## Running the code using containers
